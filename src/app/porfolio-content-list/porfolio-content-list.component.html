@@ -1,0 +1,21 @@
+
+<div class="custom_table" *ngFor="let item of list; let i=index">
+  <div class="col-xs-3">
+    {{item.date}}
+  </div>
+  <div class="col-xs-3">
+    {{getOptionName(item.type)}}
+  </div>
+  <div class="col-xs-1">
+    {{item.hours}}
+  </div>
+  <div class="col-xs-2">
+    {{item.hours}}
+  </div>
+  <div class="col-xs-3">
+    <!--<button class="form-control" (click)="removeMe(i)">Remove me</button>-->
+    <button type="button" (click)="removeMe(i)" class="btn btn-default" aria-label="Left Align">
+      <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
